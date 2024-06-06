@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Afterheader from '../components/Afterheader'
 const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -29,6 +29,8 @@ const ContactPage = () => {
   };
 
   return (
+    <>
+    <Afterheader/>
     <div className='min-h-screen bg-gray-100 py-12'>
       <div className='max-w-7xl mx-auto px-6 lg:px-8'>
         <div className='text-center mb-12'>
@@ -128,6 +130,7 @@ const ContactPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

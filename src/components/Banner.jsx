@@ -27,16 +27,17 @@ export default function Banner() {
             />
           </div>
           <div className='py-4 flex space-x-4 justify-center'>
-            <button className='w-full md:w-1/4 bg-[#df9c00f3] hover:scale-105 transition-transform duration-200 my-2 text-white p-2.5 justify-center rounded'>
-            <Link to="/About" className='block w-full h-full'>
+            <button className='w-full md:w-1/4 bg-[#df9c00f3] hover:bg-[#DD761C] hover:scale-105 transition-transform duration-200 my-2 text-white p-3.5 justify-center rounded'>
+            <Link to="/ourinitiatives" className='block w-full h-full'>
           Learn More
         </Link>
             </button>
-            <button className='w-full md:w-1/4 bg-[#df9c00f3] hover:scale-105 transition-transform duration-200 my-2 text-white p-2.5 justify-center rounded'>
-        <Link to="/donate" className='block w-full h-full'>
-          Donate Now
-        </Link>
-      </button>
+            <button className="w-full md:w-1/4 bg-[#df9c00f3] hover:bg-[#DD761C] hover:scale-105 transition-transform duration-200 my-2 text-white p-3.5 justify-center rounded">
+              <Link to="/donate" className="block w-full h-full">
+                Donate Now
+              </Link>
+            </button>
+      
           </div>
         </div>
         

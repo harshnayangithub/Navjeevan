@@ -22,7 +22,7 @@ export default function Header() {
           <li className='hover:underline hover:text-gray-200'><Link to="/">Home</Link></li>
           <li className='hover:underline hover:text-gray-200'><Link to="/donate">Donate</Link></li>
           <li className='hover:underline hover:text-gray-200'><Link to="/volunteer">Volunteer</Link></li>
-          <li className='hover:underline hover:text-gray-200'><Link to="/contact">Our Initiatives</Link></li>
+          <li className='hover:underline hover:text-gray-200'><Link to="/ourinitiatives">Our Initiatives</Link></li>
           <li className='hover:underline hover:text-gray-200'><Link to="/about">About us</Link></li>
           <li className='hover:underline hover:text-gray-200'><Link to="/contact">Contact</Link></li>
         </ul>
@@ -33,7 +33,7 @@ export default function Header() {
           <li className='p-5'><Link to="/donate" onClick={() => setToggle(false)}>Donate</Link></li>
           <li className='p-5'><Link to="/volunteer" onClick={() => setToggle(false)}>Volunteer</Link></li>
           <li className='p-5'><Link to="/about" onClick={() => setToggle(false)}>About us</Link></li>
-          <li className='hover:underline hover:text-gray-200'><Link to="/contact">Our Initiatives</Link></li>
+          <li className='hover:underline hover:text-gray-200'><Link to="/ourinitiatives">Our Initiatives</Link></li>
           <li className='p-5'><Link to="/contact" onClick={() => setToggle(false)}>Contact</Link></li>
         </ul>
       </div>
