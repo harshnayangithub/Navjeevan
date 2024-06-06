@@ -1,67 +1,79 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaFacebookSquare,
   FaGithubSquare,
   FaInstagram,
   FaTwitterSquare,
-} from 'react-icons/fa';
+  FaMapMarkerAlt,
+  FaPhone,
+} from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className='bg-[#2699fb] mx-auto py-10 px-12 text-white'>
-      <div className='grid gap-8 lg:grid-cols-3 px-12'>
+    <div className="bg-[#df9c00f3] mx-auto py-10 px-4 sm:px-12 text-white">
+      <div className="grid gap-8 lg:grid-cols-3 px-4 sm:px-12">
         <div>
-          <h1 className='w-full text-3xl font-bold text-black'>Fight For Yourself</h1>
-          <p className='py-4 '>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit ullam iste repellat consequatur libero reiciendis, blanditiis accusantium.
+          <h1 className="w-full text-3xl font-bold text-black">
+            Navjeevan Foundation
+          </h1>
+          <p className="py-4 ">
+            Want to create a world where every child is free, safe, healthy and
+            educated.
           </p>
-          <div className='flex justify-between max-w-[220px] my-6'>
-            <FaFacebookSquare size={30} />
-            <FaInstagram size={30} />
-            <FaTwitterSquare size={30} />
-            <FaGithubSquare size={30} />
+          <div className="flex justify-between max-w-[220px] my-6">
+          <a href="https://github.com/harshnayangithub"><FaGithubSquare size={30} /></a>
+          <a href="https://www.instagram.com/harsh.nayan_/"><FaInstagram size={30} /></a>
+            <a href="https://facebook.com/harshnayan"><FaFacebookSquare size={30} /></a>
+            <a href="https://twitter.com/harsh"><FaTwitterSquare size={30} /></a>
+            
           </div>
         </div>
-        <div className='lg:col-span-2 flex flex-wrap justify-between mt-1'>
-          <div className='w-full sm:w-1/2 lg:w-auto'>
-            <h6 className='font-medium text-black'>Solutions</h6>
+        <div className="lg:col-span-2 flex flex-wrap justify-between mt-1">
+          <div className="w-full sm:w-1/2 ">
+            <h6 className="text-[24px]  text-black font-bold ">QUICK LINKS</h6>
             <ul>
-              <li className='py-2 text-sm'>Analytics</li>
-              <li className='py-2 text-sm'>Marketing</li>
-              <li className='py-2 text-sm'>Commerce</li>
-              <li className='py-2 text-sm'>Insights</li>
+              <li className="hover:underline  mt-2 hover:text-gray-200">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="hover:underline mt-2 hover:text-gray-200">
+                <Link to="/donate">Donate</Link>
+              </li>
+              <li className="hover:underline mt-2 hover:text-gray-200">
+                <Link to="/volunteer">Volunteer</Link>
+              </li>
+              <li className="hover:underline mt-2 hover:text-gray-200">
+                <Link to="/contact">Our Initiatives</Link>
+              </li>
+              <li className="hover:underline mt-2 hover:text-gray-200">
+                <Link to="/about">About us</Link>
+              </li>
+              <li className="hover:underline mt-2 hover:text-gray-200">
+                <Link to="/contact">Contact</Link>
+              </li>
             </ul>
           </div>
-          <div className='w-full sm:w-1/2 lg:w-auto'>
-            <h6 className='font-medium text-black'>Support</h6>
-            <ul>
-              <li className='py-2 text-sm'>Pricing</li>
-              <li className='py-2 text-sm'>Documentation</li>
-              <li className='py-2 text-sm'>Guides</li>
-              <li className='py-2 text-sm'>API Status</li>
-            </ul>
-          </div>
-          <div className='w-full  sm:w-1/2 lg:w-auto'>
-            <h6 className='font-medium text-black'>Company</h6>
-            <ul>
-              <li className='py-2 text-sm'>About</li>
-              <li className='py-2 text-sm'>Blog</li>
-              <li className='py-2 text-sm'>Jobs</li>
-              <li className='py-2 text-sm'>Press</li>
-              <li className='py-2 text-sm'>Careers</li>
-            </ul>
-          </div>
-          <div className='w-full  sm:w-1/2 lg:w-auto'>
-            <h6 className='font-medium text-black'>Legal</h6>
-            <ul>
-              <li className='py-2 text-sm'>Claim</li>
-              <li className='py-2 text-sm'>Policy</li>
-              <li className='py-2 text-sm'>Terms</li>
-            </ul>
+          <div className="w-full sm:w-1/2 ">
+            <h6 className="text-[24px] text-black font-bold ">CONTACT</h6>
+            <div className="flex items-center mt-2">
+              <FaMapMarkerAlt />
+              <p className="ml-2">Army Institute of Technology, 
+               Dighi Hills, Pune</p>
+            </div>
+            <div className="flex items-center mt-2">
+              <FaPhone />
+              <p className="ml-2">+91-8955572387</p>
+            </div>
           </div>
         </div>
       </div>
-      <div className='px-12'> © Copyright 2024 | All Rights Reserved by{" "} | Created by Harsh Nayan</div>
+      <div className="mt-8 border-t border-white pt-4 text-center">
+        <p className="text-sm">
+          © {new Date().getFullYear()} Navjeevan Foundation. All rights
+          reserved.
+        </p>{" "}
+        <div className="text-[14px] ">Created By Harsh Nayan</div>
+      </div>
     </div>
   );
 }
