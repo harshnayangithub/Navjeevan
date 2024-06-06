@@ -1,11 +1,11 @@
 import React from 'react';
-import Whatwedo from "../components/NewsletterV"
+import Whatwedo from "../components/NewsletterV.jsx"
 import { Link } from "react-router-dom";
 
   export default function Plans() {
     return (
       <>
-      <Whatwedo/>
+      <Whatwedo a="Volunteer"/>
     <div className='w-full py-1 px-4 bg-white'>
       <div className='max-w-[1240px] mx-auto'>
         
@@ -34,16 +34,16 @@ import { Link } from "react-router-dom";
 
           
 
-        <div className='md:grid grid-cols-2 gap-8 mt-8'>
+        <div className='md:grid grid-cols-2 gap-8 mt-8 '>
           {/* Image placeholders */}
-          <div className='p-4'>
+          <div className='p-4 hover:scale-105 '>
             <img
               src='https://static.vecteezy.com/system/resources/thumbnails/027/436/015/small_2x/a-underage-child-is-working-on-harsh-condition-world-day-against-child-labor-ai-generative-photo.jpg' // replace with your actual image path
               alt='Child Labor'
-              className='rounded-lg w-full object-cover shadow-lg'
+              className='rounded-lg w-full  object-cover shadow-lg'
             />
           </div>
-          <div className='p-4'>
+          <div className='p-2 hover:scale-105'>
             <img
               src='https://static.vecteezy.com/system/resources/thumbnails/027/436/016/small_2x/a-underage-child-is-working-on-harsh-condition-world-day-against-child-labor-ai-generative-photo.jpg' // replace with your actual image path
               alt='Child Abuse'
@@ -53,14 +53,14 @@ import { Link } from "react-router-dom";
         </div>
         <div className='md:grid grid-cols-2 gap-8 mt-8'>
           {/* Image placeholders */}
-          <div className='p-4'>
+          <div className='p-4 hover:scale-105'>
             <img
               src='https://cdn.pixabay.com/photo/2023/08/19/06/55/ai-generated-8199894_1280.jpg'
               alt='Child Labor'
               className='rounded-lg w-full object-cover shadow-lg'
             />
           </div>
-          <div className='p-4'>
+          <div className='p-4 hover:scale-105'>
             <img
               src='https://cdn.pixabay.com/photo/2023/08/19/06/56/ai-generated-8199896_1280.jpg'
               alt='Child Abuse'

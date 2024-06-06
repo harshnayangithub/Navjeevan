@@ -1,61 +1,44 @@
 import React from 'react';
-
-const AboutPage = () => {
+import Harsh from '../assests/img/Harsh.jpeg';
+import NewsletterA from '../components/NewsletterV.jsx'
+export default function AboutUs() {
   return (
-    <div className='min-h-screen bg-gray-100 py-12'>
-      <div className='max-w-7xl mx-auto px-6 lg:px-8'>
-        <div className='text-center'>
-          <h1 className='text-4xl font-bold text-blue-600 mb-6'>About Us</h1>
-          <p className='text-lg text-gray-700 mb-6'>
-            Our mission is to protect women and children against sexual harassment, child abuse, and child trafficking.
-            We offer services such as rehabilitation, free education, and business startup assistance.
-          </p>
+    <>
+    <NewsletterA a="About Us"/>
+    <div className="w-full py-16 px-4 bg-gray-100">
+      <div className="max-w-[1240px] mx-auto">
+        
+        <div className="md:grid grid-cols-2 gap-8">
+          <div className="col-span-1 flex flex-col justify-center">
+            <h2 className="text-3xl text-[#df9c00f3] font-bold mt-10 mb-2">Our Mission</h2>
+            <p className="text-lg mb-4">
+              We are dedicated to creating a safe and protective environment for all children, ensuring their well-being and upholding their rights. Every child deserves the right to education. We believe that education is a fundamental right that should be accessible to all children, regardless of their background or circumstances.
+            </p>
+            <h2 className="text-3xl text-[#df9c00f3] font-bold mb-2">Our Vision</h2>
+            <p className="text-lg mb-4">
+              Our vision is to see a world where every child is free from exploitation and able to enjoy their childhood. We aim to provide resources and support to help children grow and develop in a safe, nurturing environment.
+            </p>
+            <h2 className="text-3xl text-[#df9c00f3] font-bold mb-2">Our Team Size</h2>
+            <p className="text-lg mb-10">
+              We are currently expanding our membership as part of an initiative led by Harsh Nayan. Our mission is to uplift the standard of living for underprivileged children across India and contribute to the betterment of society. Join us in making a meaningful difference in the lives of those who need it most.
+            </p>
+          </div>
+          <div className="col-span-1 flex items-center justify-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Child_labour_cartoon_Hine_no_2870..jpg/500px-Child_labour_cartoon_Hine_no_2870..jpg" alt="Our Mission" className="rounded-lg shadow-lg" />
+          </div>
         </div>
-        <div className='mt-10'>
-          <h2 className='text-2xl font-bold text-blue-600 mb-4'>Our Vision</h2>
-          <p className='text-lg text-gray-700 mb-6'>
-            We envision a world where women and children live in safety, dignity, and with equal opportunities for growth and success.
-          </p>
-        </div>
-        <div className='mt-10'>
-          <h2 className='text-2xl font-bold text-blue-600 mb-4'>Our Mission</h2>
-          <p className='text-lg text-gray-700 mb-6'>
-            Our mission is to empower women and children by providing them with the necessary tools and support to overcome adversity and thrive in society.
-          </p>
-        </div>
-        <div className='mt-10'>
-          <h2 className='text-2xl font-bold text-blue-600 mb-4'>Our Services</h2>
-          <ul className='list-disc list-inside text-lg text-gray-700 mb-6'>
-            <li>Rehabilitation Programs</li>
-            <li>Free Education</li>
-            <li>Business Startup Assistance</li>
-            <li>Legal and Psychological Support</li>
-            <li>Community Awareness Campaigns</li>
-          </ul>
-        </div>
-        <div className='mt-10'>
-          <h2 className='text-2xl font-bold text-blue-600 mb-4'>Meet Our Team</h2>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
-            <div className='bg-white shadow-lg rounded-lg p-6'>
-              <img src='https://via.placeholder.com/150' alt='Team Member' className='w-32 h-32 rounded-full mx-auto mb-4' />
-              <h3 className='text-xl font-bold text-blue-600 mb-2 text-center'>John Doe</h3>
-              <p className='text-gray-700 text-center'>Founder & CEO</p>
-            </div>
-            <div className='bg-white shadow-lg rounded-lg p-6'>
-              <img src='https://via.placeholder.com/150' alt='Team Member' className='w-32 h-32 rounded-full mx-auto mb-4' />
-              <h3 className='text-xl font-bold text-blue-600 mb-2 text-center'>Jane Smith</h3>
-              <p className='text-gray-700 text-center'>Chief Operating Officer</p>
-            </div>
-            <div className='bg-white shadow-lg rounded-lg p-6'>
-              <img src='https://via.placeholder.com/150' alt='Team Member' className='w-32 h-32 rounded-full mx-auto mb-4' />
-              <h3 className='text-xl font-bold text-blue-600 mb-2 text-center'>Emily Johnson</h3>
-              <p className='text-gray-700 text-center'>Head of Education</p>
+        <div className="mt-16">
+          <h2 className="text-3xl font-bold text-center mb-10">Our Team</h2>
+          <div className="flex justify-center">
+            <div className="bg-white p-20 rounded hover:scale-105 transition-transform duration-300 shadow-lg flex flex-col items-center">
+              <img src={Harsh} alt="Team Member" className="rounded-full w-40 h-40 mb-6 object-cover" />
+              <h3 className="text-2xl font-bold mb-2">Harsh Nayan</h3>
+              <p className="text-lg">Member & Founder</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    </>
   );
-};
-
-export default AboutPage;
+}

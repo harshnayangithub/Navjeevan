@@ -7,6 +7,7 @@ import {
   FaTwitterSquare,
   FaMapMarkerAlt,
   FaPhone,
+  FaEnvelope,
 } from "react-icons/fa";
 
 export default function Footer() {
@@ -22,10 +23,18 @@ export default function Footer() {
             educated.
           </p>
           <div className="flex justify-between max-w-[220px] my-6">
-          <a href="https://github.com/harshnayangithub"><FaGithubSquare size={30} /></a>
-          <a href="https://www.instagram.com/harsh.nayan_/"><FaInstagram size={30} /></a>
-            <a href="https://facebook.com/harshnayan"><FaFacebookSquare size={30} /></a>
-            <a href="https://twitter.com/harsh"><FaTwitterSquare size={30} /></a>
+          <a href="https://github.com/harshnayangithub " className='hover:text-[#DD761C]'>
+                    <FaGithubSquare size={30} />
+                  </a>
+                  <a href="https://www.instagram.com/harsh.nayan_/" className='hover:text-[#DD761C]'>
+                    <FaInstagram size={30} />
+                  </a>
+                  <a href="https://facebook.com/harshnayan" className='hover:text-[#DD761C]'>
+                    <FaFacebookSquare size={30} />
+                  </a>
+                  <a href="https://twitter.com/harsh" className='hover:text-[#DD761C]'>
+                    <FaTwitterSquare size={30} />
+                  </a>
             
           </div>
         </div>
@@ -33,22 +42,22 @@ export default function Footer() {
           <div className="w-full sm:w-1/2 ">
             <h6 className="text-[24px]  text-black font-bold ">QUICK LINKS</h6>
             <ul>
-              <li className="hover:underline  mt-2 hover:text-gray-200">
+              <li className="hover:underline  mt-2 hover:text-[#DD761C]  font-bold">
                 <Link to="/">Home</Link>
               </li>
-              <li className="hover:underline mt-2 hover:text-gray-200">
+              <li className="hover:underline mt-2 hover:text-[#DD761C]  font-bold">
                 <Link to="/donate">Donate</Link>
               </li>
-              <li className="hover:underline mt-2 hover:text-gray-200">
+              <li className="hover:underline mt-2 hover:text-[#DD761C]  font-bold">
                 <Link to="/volunteer">Volunteer</Link>
               </li>
-              <li className="hover:underline mt-2 hover:text-gray-200">
+              <li className="hover:underline mt-2 hover:text-[#DD761C]  font-bold">
                 <Link to="/contact">Our Initiatives</Link>
               </li>
-              <li className="hover:underline mt-2 hover:text-gray-200">
+              <li className="hover:underline mt-2 hover:text-[#DD761C]  font-bold" >
                 <Link to="/about">About us</Link>
               </li>
-              <li className="hover:underline mt-2 hover:text-gray-200">
+              <li className="hover:underline mt-2 hover:text-[#DD761C]  font-bold">
                 <Link to="/contact">Contact</Link>
               </li>
             </ul>
@@ -57,12 +66,22 @@ export default function Footer() {
             <h6 className="text-[24px] text-black font-bold ">CONTACT</h6>
             <div className="flex items-center mt-2">
               <FaMapMarkerAlt />
-              <p className="ml-2">Army Institute of Technology, 
+              <p className="ml-2 hover:text-[#DD761C]">Army Institute of Technology, 
                Dighi Hills, Pune</p>
             </div>
+            
             <div className="flex items-center mt-2">
               <FaPhone />
-              <p className="ml-2">+91-8955572387</p>
+              <p className="ml-2 hover:text-[#DD761C]">
+            <a href="tel:+918955572387">+91-8955572387</a>
+          </p>
+              
+            </div>
+            <div className="flex items-center mt-2">
+              <FaEnvelope />
+              <p className="ml-2 hover:text-[#DD761C]">
+            <a href="mailto:harshnayan35@gmail.com">harshnayan35@gmail.com</a>
+          </p>
             </div>
           </div>
         </div>

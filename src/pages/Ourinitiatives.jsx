@@ -3,7 +3,7 @@ import React from 'react';
 import ChildP from "../assests/img/Flex1.jpeg";
 import Home from "../assests/img/Flex2.jpeg";
 import Homea from "../assests/img/Flex3.jpeg";
-import Whatwedo from "../components/NewsletterO"
+import Whatwedo from "../components/NewsletterV"
 import { Link } from 'react-router-dom';
 const Initiative = ({ title, description, buttonColor, imgSrc }) => (
   <div className="relative h-[400px] max-w-[1240px] mx-auto bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl my-10 md:grid grid-cols-2">
@@ -25,7 +25,7 @@ const Initiative = ({ title, description, buttonColor, imgSrc }) => (
 export default function OurInitiatives() {
   return (
     <>
-    <Whatwedo/>
+    <Whatwedo a="Our Initiatives" />
     <div className='w-full py-16 px-4 bg-gray-100'>
       <div className='space-y-16'>
         <Initiative

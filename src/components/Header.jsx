@@ -19,12 +19,12 @@ export default function Header() {
             <AiOutlineMenu onClick={() => setToggle(!toggle)} className='text-white text-2xl md:hidden block' />
         }
         <ul className='hidden md:flex text-white gap-10'>
-          <li className='hover:underline hover:text-gray-200'><Link to="/">Home</Link></li>
-          <li className='hover:underline hover:text-gray-200'><Link to="/donate">Donate</Link></li>
-          <li className='hover:underline hover:text-gray-200'><Link to="/volunteer">Volunteer</Link></li>
-          <li className='hover:underline hover:text-gray-200'><Link to="/ourinitiatives">Our Initiatives</Link></li>
-          <li className='hover:underline hover:text-gray-200'><Link to="/about">About us</Link></li>
-          <li className='hover:underline hover:text-gray-200'><Link to="/contact">Contact</Link></li>
+          <li className='hover:underline hover:text-[#DD761C] font-bold hover:scale-105'><Link to="/">Home</Link></li>
+          <li className='hover:underline hover:text-[#DD761C] font-bold hover:scale-105'><Link to="/donate">Donate</Link></li>
+          <li className='hover:underline hover:text-[#DD761C] font-bold hover:scale-105'><Link to="/volunteer">Volunteer</Link></li>
+          <li className='hover:underline hover:text-[#DD761C] font-bold hover:scale-105'><Link to="/ourinitiatives">Our Initiatives</Link></li>
+          <li className='hover:underline hover:text-[#DD761C] font-bold hover:scale-105'><Link to="/about">About us</Link></li>
+          <li className='hover:underline hover:text-[#DD761C] font-bold hover:scale-105'><Link to="/contact">Contact</Link></li>
         </ul>
 
         <ul className={`duration-300 md:hidden w-full h-screen text-white fixed bg-black top-[86px]
@@ -33,7 +33,7 @@ export default function Header() {
           <li className='p-5'><Link to="/donate" onClick={() => setToggle(false)}>Donate</Link></li>
           <li className='p-5'><Link to="/volunteer" onClick={() => setToggle(false)}>Volunteer</Link></li>
           <li className='p-5'><Link to="/about" onClick={() => setToggle(false)}>About us</Link></li>
-          <li className='hover:underline hover:text-gray-200'><Link to="/ourinitiatives">Our Initiatives</Link></li>
+          <li className='hover:underline hover:text-[#DD761C] font-bold hover:scale-105'><Link to="/ourinitiatives">Our Initiatives</Link></li>
           <li className='p-5'><Link to="/contact" onClick={() => setToggle(false)}>Contact</Link></li>
         </ul>
       </div>

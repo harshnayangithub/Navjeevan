@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Whatwedo from "../components/NewsletterV.jsx"
 const DonatePage = () => {
   const [formData, setFormData] = useState({
     country: 'India',
@@ -67,6 +67,8 @@ const DonatePage = () => {
   };
 
   return (
+    <>
+  <Whatwedo a="Donate"/>
     <div className='bg-[#f8fafc] min-h-screen flex items-center justify-center'>
       <div className='max-w-5xl w-full mx-auto p-8 bg-white shadow-md rounded-lg'>
         <h1 className='text-3xl font-bold mb-6 text-center text-[#df9c00f3]'>Donate to Support Our Cause</h1>
@@ -230,6 +232,7 @@ const DonatePage = () => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 
