@@ -62,8 +62,8 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="w-full sm:w-1/2 ">
-            <h6 className="text-[24px] text-black font-bold ">CONTACT</h6>
+          <div className="w-full sm:w-1/2 p-4 mt-[20px] md:mt-[0px] mx-[-15px] ">
+            <h6 className="text-[24px] text-black  font-bold ">CONTACT US</h6>
             <div className="flex items-center mt-2">
               <FaMapMarkerAlt />
               <p className="ml-2 hover:text-[#DD761C]">Army Institute of Technology, 

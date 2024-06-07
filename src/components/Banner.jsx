@@ -1,12 +1,12 @@
 import React from 'react';
 import { ReactTyped } from 'react-typed';
-import Home from '../assests/img/Labourc.jpeg';
+
 import { Link } from 'react-router-dom';
 export default function Banner() {
   return (
     <div
-      className='w-full h-screen  bg-cover bg-center relative py-[120px]'
-      style={{ backgroundImage: `url(${Home})` }}
+      className='w-[full] h-[700px]  bg-cover bg-center relative py-[120px]'
+      style={{ backgroundImage: `url(https://images.pexels.com/photos/18515366/pexels-photo-18515366.jpeg?cs=srgb&dl=pexels-wadaa-alaumry-739227478-18515366.jpg&fm=jpg` }}
     >
       <div className=' bg-opacity-70 w-full h-full flex items-center justify-center '>
         <div className='max-w-[1240px] py-[30px] mx-auto text-center font-bold'>
@@ -26,7 +26,7 @@ export default function Banner() {
               backSpeed={70}
             />
           </div>
-          <div className='py-4 flex space-x-4 justify-center'>
+          <div className='py-4 flex space-x-4 md:p-2 p-4 justify-center'>
             <button className='w-full md:w-1/4 bg-[#df9c00f3] hover:bg-[#DD761C] hover:scale-105 transition-transform duration-200 my-2 text-white p-3.5 justify-center rounded'>
             <Link to="/ourinitiatives" className='block w-full h-full'>
           Learn More
@@ -81,7 +81,7 @@ export default function Banner() {
 //           transition: 'background-image 1s ease-in-out',
 //         }}
 //       ></div>
-//       <div className='absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center'>
+//       <div className='absolute inset-0 bg-white bg-opacity-70 flex items-center justify-center'>
 //         <div className='max-w-[1240px] py-[30px] mx-auto text-center font-bold'>
 //           <div className='text-xl md:text-4xl py-[40px] text-white'>
 //             Creating a World Free from Child Labour
