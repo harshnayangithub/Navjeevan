@@ -1,12 +1,12 @@
 import React from 'react';
 import { ReactTyped } from 'react-typed';
-
+import Home from "../assests/img/Banner.jpeg"
 import { Link } from 'react-router-dom';
 export default function Banner() {
   return (
     <div
       className='w-[full] h-[700px]  bg-cover bg-center relative py-[120px]'
-      style={{ backgroundImage: `url(https://images.pexels.com/photos/18515366/pexels-photo-18515366.jpeg?cs=srgb&dl=pexels-wadaa-alaumry-739227478-18515366.jpg&fm=jpg` }}
+      style={{ backgroundImage:  `url(${Home})` }}
     >
       <div className=' bg-opacity-70 w-full h-full flex items-center justify-center '>
         <div className='max-w-[1240px] py-[30px] mx-auto text-center font-bold'>
