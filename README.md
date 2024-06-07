@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Navjeevan: Fighting Against Child Labor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Navjeevan is a project dedicated to combating child labor and ensuring the well-being and education of children around the world. This website serves as a platform to raise awareness, provide resources, and engage with stakeholders in the mission to eradicate child labor practices.
 
-## Available Scripts
+## Mission
 
-In the project directory, you can run:
+Our mission at Navjeevan is to create a world where every child has the opportunity to thrive in a safe and nurturing environment, free from the shackles of labor exploitation. We believe that every child deserves access to education, healthcare, and a childhood filled with joy and possibilities.
 
-### `npm start`
+## About
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Navjeevan is a collaborative initiative involving NGOs, activists, policymakers, and concerned individuals who are passionate about safeguarding the rights of children. Through advocacy, education, and community empowerment, we aim to break the cycle of poverty and exploitation that perpetuates child labor.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Awareness Campaigns:** Stay updated on our latest campaigns and initiatives aimed at raising awareness about child labor issues globally.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Resources:** Access educational materials, research reports, and toolkits to learn more about the causes and consequences of child labor, as well as effective strategies for prevention and intervention.
 
-### `npm run build`
+- **Get Involved:** Discover opportunities to get involved in our advocacy efforts, whether through volunteering, fundraising, or spreading awareness in your community.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Support:** Find information on how you can support children rescued from labor situations, including donations, sponsorships, and partnerships with local organizations.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to Contribute
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+We welcome contributions from individuals and organizations who share our commitment to ending child labor. Here are some ways you can get involved:
 
-### `npm run eject`
+- **Spread the Word:** Follow us on social media and share our posts to amplify our message and reach a wider audience.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Donate:** Your financial support enables us to continue our work rescuing and rehabilitating children affected by labor exploitation.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Volunteer:** Join our team of volunteers and contribute your time and skills to support our programs and campaigns.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Partner:** If you represent an organization or business, consider partnering with us to create synergies and maximize our impact.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contact Us
 
-## Learn More
+Have questions or want to learn more about Navjeevan and our work? Feel free to reach out to us:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Email:** harshnayan@35gmail.com
+- **Phone:** +91-8955572387
+- **Address:** AIT Pune, Maharashtra.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to customize and expand upon this README to fit the specific goals and features of the Navjeevan website and create an issue if you want to add any feature to the website.
