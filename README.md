@@ -40,7 +40,8 @@ Navjeevan is a collaborative initiative involving NGOs, activists, policymakers,
    npm run start
    ```
    The website will be live at [http://localhost:3000](http://localhost:3000).
-
+   
+![image](https://github.com/harshnayangithub/Navjeevan/assets/126700987/524ed237-3b9f-4142-bb1b-fbae7650fa73)
 
 ### 2) To set up the Navjeevan project locally on your machine, using Docker:
 
