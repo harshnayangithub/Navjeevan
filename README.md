@@ -1,3 +1,4 @@
+
 # Navjeevan: Fighting Against Child labour
 
 Navjeevan is a project dedicated to combating child labour and ensuring the well-being and education of children around the world. This website serves as a platform to raise awareness, provide resources, and engage with stakeholders in the mission to eradicate child labour practices.
@@ -20,6 +21,36 @@ Navjeevan is a collaborative initiative involving NGOs, activists, policymakers,
 
 - **Support:** Find information on how you can support children rescued from labour situations, including donations, sponsorships, and partnerships with local organizations.
 
+## Setting Up the Project
+
+To set up the Navjeevan project locally on your machine, follow these steps:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone <repository-url>
+   cd navjeevan-project
+   ```
+
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the Development Server:**
+   ```bash
+   npm start
+   ```
+   The website will be live at [http://localhost:3000](http://localhost:3000).
+
+## Dependencies
+
+The Navjeevan project relies on the following dependencies:
+
+- **React:** JavaScript library for building user interfaces.
+- **Tailwind CSS:** Utility-first CSS framework for rapidly building custom designs.
+- **React Typed:** TypeScript definitions for React.
+- **Tailwind Line Clamp:** Tailwind CSS plugin for truncating text with ellipsis.
+
 ## How to Contribute
 
 We welcome contributions from individuals and organizations who share our commitment to ending child labour. Here are some ways you can get involved:
@@ -41,4 +72,10 @@ Have questions or want to learn more about Navjeevan and our work? Feel free to 
 - **Address:** AIT Pune, Maharashtra.
 
 
-Feel free to customize and expand upon this README to fit the specific goals and features of the Navjeevan website and create an issue if you want to add any feature to the website.
+## License'
+
+MIT License
+
+---
+
+Feel free to customize and expand upon this README to fit the specific goals and features of the Navjeevan website. If you want to add any feature/bugfix open an issue.
