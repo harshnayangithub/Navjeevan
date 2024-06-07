@@ -23,7 +23,7 @@ Navjeevan is a collaborative initiative involving NGOs, activists, policymakers,
 
 ## Setting Up the Project
 
-To set up the Navjeevan project locally on your machine, follow these steps:
+1) To set up the Navjeevan project locally on your machine, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
@@ -40,6 +40,21 @@ To set up the Navjeevan project locally on your machine, follow these steps:
    npm run start
    ```
    The website will be live at [http://localhost:3000](http://localhost:3000).
+
+
+2) To set up the Navjeevan project locally on your machine, follow these steps:
+
+   1. **Pull the Docker image from Dockerhub:**
+   ```bash
+   sudo docker pull harshx/navjeevan-frontend:latest
+   ```
+
+2. **Run the Docker Image:**
+   ```bash
+   sudo docker run -p 80:80 harshx/navjeevan-frontend
+   ```
+   
+   The website will be live at [http://localhost](http://localhost).
 
 ## Dependencies
 
