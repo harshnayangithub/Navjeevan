@@ -5,13 +5,13 @@ FROM node:16-alpine
 WORKDIR /app
 
 # Copy package.json and package-lock.json files to the working directory
-COPY client/package*.json ./
+COPY /package*.json ./
 
 # Install frontend dependencies
 RUN npm install
 
 # Copy the rest of the frontend files
-COPY client ./
+COPY ./
 
 # Build the React app
 RUN npm run build
@@ -23,10 +23,92 @@ COPY --from=0 /app/build /usr/share/nginx/html
 # Expose port 80
 EXPOSE 80
 
+Start Nginx server
+CMD ["nginx", "-g", "daemon off;"]
 
 
-# # Start Nginx server
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Dockerfile with the frontend
+
+# # Use official Node.js image as the base image
+# FROM node:16-alpine
+
+# # Set the working directory inside the container
+# WORKDIR /app
+
+# # Copy package.json and package-lock.json files to the working directory
+# COPY client/package*.json ./
+
+# # Install frontend dependencies
+# RUN npm install
+
+# # Copy the rest of the frontend files
+# COPY client ./
+
+# # Build the React app
+# RUN npm run build
+
+# # Use an official Nginx image to serve the static files
+# FROM nginx:alpine
+# COPY --from=0 /app/build /usr/share/nginx/html
+
+# # Expose port 80
+# EXPOSE 80
+
+# Start Nginx server
 # CMD ["nginx", "-g", "daemon off;"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ # Dockerfile with the backend
 # # Use official Node.js image as the base image
 # FROM node:16-alpine
 
@@ -55,6 +137,16 @@ EXPOSE 80
 
 # # Start the server
 # CMD ["npm", "start"]
+
+
+
+
+
+
+
+
+
+
 
 # docker-compose.yaml
 # version: '3.8'
