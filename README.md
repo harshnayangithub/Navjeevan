@@ -27,8 +27,7 @@ To set up the Navjeevan project locally on your machine, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
-   git clone <repository-url>
-   cd navjeevan-project
+   git clone https://github.com/harshnayangithub/Navjeevan.git
    ```
 
 2. **Install Dependencies:**
@@ -38,7 +37,7 @@ To set up the Navjeevan project locally on your machine, follow these steps:
 
 3. **Start the Development Server:**
    ```bash
-   npm start
+   npm run start
    ```
    The website will be live at [http://localhost:3000](http://localhost:3000).
 
