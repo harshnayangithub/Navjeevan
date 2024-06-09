@@ -1,17 +1,4 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* Hide the Google Translate widget
-.goog-te-banner-frame.skiptranslate,
-.goog-te-gadget-icon {
-  display: none !important;
-}
 
-body {
-  top: 0px !important;
-}
-
-/* Optionally hide the inline translate bar */
-/* .goog-te-gadget-simple {
-  display: none !important;
-} */ 
