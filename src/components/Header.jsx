@@ -1,25 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import GoogleTranslate from './GoogleTranslate';
 
 export default function Header() {
   const [toggle, setToggle] = useState(false);
-
-  useEffect(() => {
-    const googleTranslateElementInit = () => {
-      new window.google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
-    };
-
-    const addScript = document.createElement('script');
-    addScript.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-    addScript.type = 'text/javascript';
-    document.body.appendChild(addScript);
-
-    return () => {
-      document.body.removeChild(addScript);
-    };
-  }, []);
 
   const changeLanguage = (languageCode) => {
     const selectElement = document.querySelector(".goog-te-combo");
@@ -64,7 +48,6 @@ export default function Header() {
           <li className='p-5 text-center hover:text-[#DD761C]' onClick={() => changeLanguage('hi')}>हिन्दी</li>
         </ul>
       </div>
-      <GoogleTranslate />
     </div>
   );
 }
