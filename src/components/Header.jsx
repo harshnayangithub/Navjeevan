@@ -67,9 +67,9 @@ export default function Header() {
           <li className='relative hover:underline hover:text-[#DD761C]'>
             <span onClick={() => setShowLanguageDropdown(!showLanguageDropdown)}>Language</span>
             {showLanguageDropdown && (
-              <ul className='absolute bg-white text-black right-0 top-full mt-2 p-2 shadow-lg rounded'>
+              <ul className='absolute bg-[#df9c00ba] mx-[-21px] text-white right-0 top-full mt-2 p-4 shadow-lg rounded'>
                 {languages.map(lang => (
-                  <li key={lang.code} className='p-2 hover:bg-gray-200 cursor-pointer' onClick={() => changeLanguage(lang.code)}>
+                  <li key={lang.code} className='p-3 hover:text-[#DD761C] hover:underline cursor-pointer' onClick={() => changeLanguage(lang.code)}>
                     {lang.label}
                   </li>
                 ))}
