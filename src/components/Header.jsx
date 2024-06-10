@@ -7,6 +7,7 @@ export default function Header() {
   const [showLanguageDropdown, setShowLanguageDropdown] = useState(false);
   const languageDropdownRef = useRef(null);
 
+
   useEffect(() => {
     const hideTranslateToolbar = () => {
       const translateBanner = document.querySelector('.goog-te-banner-frame.skiptranslate');
@@ -23,19 +24,6 @@ export default function Header() {
     return () => clearInterval(intervalId);
   }, []);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (languageDropdownRef.current && !languageDropdownRef.current.contains(event.target)) {
-        setShowLanguageDropdown(false);
-      }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-  
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
-  
   const changeLanguage = (languageCode) => {
     const selectElement = document.querySelector(".goog-te-combo");
     if (selectElement) {
@@ -58,6 +46,20 @@ export default function Header() {
     { code: 'as', label: 'অসমীয়া' },
   ];
 
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (languageDropdownRef.current && !languageDropdownRef.current.contains(event.target)) {
+        setShowLanguageDropdown(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+  
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+    
   return (
     <div className='bg-[#df9c00f3] shadow-lg z-50 w-full relative'>
       <div className='max-w-[1240px] py-3 px-6 flex justify-between items-center mx-auto'>
@@ -67,9 +69,9 @@ export default function Header() {
         </Link>
         {
           toggle ?
-            <AiOutlineClose onClick={() => setToggle(!toggle)} className='text-white text-2xl md:hidden block ml-8 cursor-pointer' />
+            <AiOutlineClose onClick={() => setToggle(!toggle)} className='text-white  cursor-pointer text-2xl md:hidden block ml-8' />
             :
-            <AiOutlineMenu onClick={() => setToggle(!toggle)} className='text-white text-2xl md:hidden block ml-4 cursor-pointer' />
+            <AiOutlineMenu onClick={() => setToggle(!toggle)} className='text-white cursor-pointer text-2xl md:hidden block ml-4' />
         }
         <ul className='hidden md:flex text-white gap-10 font-semibold'>
           <li className='hover:underline hover:text-[#DD761C]'><Link to="/">Home</Link></li>
@@ -79,9 +81,9 @@ export default function Header() {
           <li className='hover:underline hover:text-[#DD761C]'><Link to="/about">About us</Link></li>
           <li className='hover:underline hover:text-[#DD761C]'><Link to="/contact">Contact</Link></li>
           <li className='relative hover:underline hover:text-[#DD761C] cursor-pointer'>
-            <span onClick={() => setShowLanguageDropdown(!showLanguageDropdown)}>Language</span>
+            <span  onClick={() => setShowLanguageDropdown(!showLanguageDropdown)}>Language</span>
             {showLanguageDropdown && (
-              <ul  ref={languageDropdownRef} className=' absolute bg-[#df9c00ba] mx-[-21px] text-white right-0 top-full mt-2 p-4 shadow-lg rounded'>
+              <ul ref={languageDropdownRef} className='absolute bg-[#df9c00ba] mx-[-21px] text-white right-0 top-full mt-2 p-4 shadow-lg rounded'>
                 {languages.map(lang => (
                   <li key={lang.code} className='p-3 hover:text-[#DD761C] hover:underline cursor-pointer' onClick={() => changeLanguage(lang.code)}>
                     {lang.label}
@@ -99,13 +101,13 @@ export default function Header() {
           <li className='p-5 text-center hover:text-[#DD761C] hover:underline'><Link to="/ourinitiatives" onClick={() => setToggle(false)}>Our Initiatives</Link></li>
           <li className='p-5 text-center hover:text-[#DD761C] hover:underline'><Link to="/about" onClick={() => setToggle(false)}>About us</Link></li>
           <li className='p-5 text-center hover:text-[#DD761C] hover:underline'><Link to="/contact" onClick={() => setToggle(false)}>Contact</Link></li>
-          <li className='p-4 text-center hover:text-[#DD761C] ' onClick={() => setShowLanguageDropdown(!showLanguageDropdown)}>
-            <span className=' cursor-pointer '>Choose Language</span>
+          <li className='p-5 text-center hover:text-[#DD761C]' onClick={() => setShowLanguageDropdown(!showLanguageDropdown)}>
+            <span className='cursor-pointer'>Choose Language</span>
           </li>
           {showLanguageDropdown && (
-            <ul ref={languageDropdownRef} className='bg-black p-2 text-center'>
+            <ul className='bg-black p-5 text-center'>
               {languages.map(lang => (
-                <li key={lang.code} className='p-1 hover:text-[#DD761C] cursor-pointer' onClick={() => changeLanguage(lang.code)}>
+                <li key={lang.code} className='p-2 hover:text-[#DD761C] cursor-pointer' onClick={() => changeLanguage(lang.code)}>
                   {lang.label}
                 </li>
               ))}
