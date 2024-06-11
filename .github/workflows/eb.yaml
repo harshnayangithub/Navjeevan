@@ -17,7 +17,7 @@ jobs:
 
       - name: Generate Deployment Package 
         # zip all files except .git
-        run: zip -r Navjeevan.zip * -x "**.git**"
+        run: zip -r Childlabour.zip * -x "**.git**"
 
       - name: Get timestamp
         uses: gerred/actions/current-time@master
@@ -39,11 +39,11 @@ jobs:
          #  input the credentials you used to setup AWS CLI and credentials for the application environment
           aws_access_key: "${{ secrets.ACCESS_KEY }}"
           aws_secret_key: "${{ secrets.SECRET_ACCESS_KEY }}"
-          application_name: Navjeevan
-          environment_name: Navjeevan-env-1 
+          application_name: Childlabour
+          environment_name: Childlabour-env
           version_label: "app-${{ steps.format-time.outputs.replaced }}"
           region: ap-south-1
-          deployment_package: Navjeevan.zip
+          deployment_package: Childlabour.zip
 
       - name: Deployed!
         run: echo App deployed to ELB
