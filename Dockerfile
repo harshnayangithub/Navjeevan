@@ -1,6 +1,6 @@
 # Use official Node.js image as the base image
 FROM node:16-alpine
-
+ENV PORT=3000
 # Set the working directory inside the container
 WORKDIR /app
 
@@ -15,7 +15,8 @@ COPY ./
 
 # Build the React app
 RUN npm run build
-
+EXPOSE ${PORT}
+CMD ["npm", "start"]
 # Use an official Nginx image to serve the static files
 FROM nginx:alpine
 COPY --from=0 /app/build /usr/share/nginx/html
