@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Afterheader from "../components/NewsletterV";
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../firebase";  
 
 import {
   FaFacebookSquare,
@@ -10,6 +12,7 @@ import {
   FaPhone,
   FaEnvelope,
 } from "react-icons/fa";
+
 const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -28,16 +31,28 @@ const ContactPage = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
+
+    try {
+      await addDoc(collection(db, "contacts"), {
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        timestamp: new Date(),
+      });
+      setSubmitted(true);
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Error adding document: ", error);
+    }
   };
 
   return (
@@ -149,39 +164,34 @@ const ContactPage = () => {
                 Contact Information
               </h2>
               <div className="flex items-center mt-2">
-              <FaMapMarkerAlt />
-              <p className="ml-2 hover:text-[#DD761C]">Army Institute of Technology, 
-               Dighi Hills, Pune</p>
-            </div>
-            <div className="flex items-center mt-2">
-              <FaPhone />
-              <p className="ml-2 hover:text-[#DD761C]">
-            <a href="tel:+918955572387">+91-8955572387</a>
-          </p>
-              
-            </div>
-            <div className="flex items-center mt-2">
-              <FaEnvelope />
-              <p className="ml-2 hover:text-[#DD761C]">
-            <a href="mailto:harshnayan35@gmail.com">harshnayan35@gmail.com</a>
-          </p>
-            </div>
-            
+                <FaMapMarkerAlt />
+                <p className="ml-2 hover:text-[#DD761C]">Army Institute of Technology, Dighi Hills, Pune</p>
+              </div>
+              <div className="flex items-center mt-2">
+                <FaPhone />
+                <p className="ml-2 hover:text-[#DD761C]">
+                  <a href="tel:+918955572387">+91-8955572387</a>
+                </p>
+              </div>
+              <div className="flex items-center mt-2">
+                <FaEnvelope />
+                <p className="ml-2 hover:text-[#DD761C]">
+                  <a href="mailto:harshnayan35@gmail.com">harshnayan35@gmail.com</a>
+                </p>
+              </div>
               <div className="mt-10">
-                <h3 className="text-3xl font-bold text-[#df9c00f3] mb-2">
-                  Our Social Media
-                </h3>
-                <div className="flex space-x-4 ">
-                  <a href="https://github.com/harshnayangithub " className='hover:text-[#DD761C]'>
+                <h3 className="text-3xl font-bold text-[#df9c00f3] mb-2">Our Social Media</h3>
+                <div className="flex space-x-4">
+                  <a href="https://github.com/harshnayangithub" className="hover:text-[#DD761C]">
                     <FaGithubSquare size={30} />
                   </a>
-                  <a href="https://www.instagram.com/harsh.nayan_/" className='hover:text-[#DD761C]'>
+                  <a href="https://www.instagram.com/harsh.nayan_/" className="hover:text-[#DD761C]">
                     <FaInstagram size={30} />
                   </a>
-                  <a href="https://facebook.com/harshnayan" className='hover:text-[#DD761C]'>
+                  <a href="https://facebook.com/harshnayan" className="hover:text-[#DD761C]">
                     <FaFacebookSquare size={30} />
                   </a>
-                  <a href="https://twitter.com/harsh" className='hover:text-[#DD761C]'>
+                  <a href="https://twitter.com/harsh" className="hover:text-[#DD761C]">
                     <FaTwitterSquare size={30} />
                   </a>
                 </div>
