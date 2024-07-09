@@ -66,17 +66,9 @@ The Navjeevan project relies on the following dependencies:
 - **React Typed:** TypeScript definitions for React.
 - **Tailwind Line Clamp:** Tailwind CSS plugin for truncating text with ellipsis.
 
-## How to Contribute
+## How to Contribute (Concept Project)
 
-We welcome contributions from individuals and organizations who share our commitment to ending child labour. Here are some ways you can get involved:
-
-- **Spread the Word:** Follow us on social media and share our posts to amplify our message and reach a wider audience.
-
-- **Donate:** Your financial support enables us to continue our work rescuing and rehabilitating children affected by labour exploitation.
-
-- **Volunteer:** Join our team of volunteers and contribute your time and skills to support our programs and campaigns.
-
-- **Partner:** If you represent an organization or business, consider partnering with us to create synergies and maximize our impact.
+In your capacity try to spread awareness against child labour.
 
 ## Contact Us
 
